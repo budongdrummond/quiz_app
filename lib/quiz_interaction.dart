@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class QuizInteraction extends StatefulWidget {
-  // 5.) for stateful widget we also need the constructor function
+  // 5.) for stateful widget we also need the constructor function as usual
   const QuizInteraction({super.key});
 
   // 1.) invoke the createState method for statefulWidget

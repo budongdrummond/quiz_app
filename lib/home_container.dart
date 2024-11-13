@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:quiz_app/quiz_interaction.dart';
 
 /// this is the class for the main container which-
 /// will be the same throughout the app.
@@ -25,8 +26,10 @@ class HomeContainer extends StatelessWidget {
           end: Alignment.bottomCenter,
         ),
       ),
-      child: const Center(),
-      // this is where we calling the statefulWidget.
+      child: const Center(
+        // this is where we calling the statefulWidget.
+        child: QuizInteraction(),
+      ),
     );
   }
 }

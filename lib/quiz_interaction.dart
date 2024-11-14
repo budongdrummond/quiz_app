@@ -17,39 +17,6 @@ class _QuizInteractionState extends State<QuizInteraction> {
   // 3.) in this we need to add the build() method - remembering the @override
   @override
   Widget build(context) {
-    return Center(
-      child: Column(
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          Image.asset(
-            'assets/images/quiz-logo.png',
-            width: 200,
-          ),
-          // padding
-          const SizedBox(
-            height: 50,
-          ),
-          const Text(
-            'The Quiz App',
-            style: TextStyle(
-              fontSize: 24,
-              color: Colors.white,
-            ),
-          ),
-          // padding
-          const SizedBox(
-            height: 50,
-          ),
-          FloatingActionButton.extended(
-            onPressed: () {},
-            label: const Text('Press to START'),
-            icon: const Icon(Icons.quiz),
-          ),
-          const SizedBox(
-            height: 20,
-          ),
-        ],
-      ),
-    );
+    return const Center();
   }
 }

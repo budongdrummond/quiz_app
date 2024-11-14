@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 import 'package:quiz_app/quiz_interaction.dart';
 
@@ -22,21 +24,49 @@ class StartScreen extends StatelessWidget {
   // 2.) inside of the custom statelesidget class we add a build method-
   //      which will return a widget (a type of widget)
   Widget build(BuildContext context) {
-    return Container(
-      decoration: const BoxDecoration(
-        gradient: LinearGradient(
-          colors: [
-            Color.fromARGB(255, 45, 3, 96),
-            Color.fromARGB(255, 81, 22, 91)
-          ],
-          begin: Alignment.topCenter,
-          end: Alignment.bottomCenter,
-        ),
-      ),
-      child: const Center(
-        // this is where we calling the statefulWidget.
-        child: QuizInteraction(),
+    // 4.) we use 'center' to ensure widget is centre of the screen
+    return Center(
+      // 5.) we use column or row after because if we want multiple widgets
+      //      next to each other. Use 'children' argument for column which in turn it wants a list
+      //      column display up/down and row is side to side.
+      child: Column(
+        // 6.) use mainAxisSize to tidy the way our widgets in Column being arranged
+        //      maxAxisSize.min used so we can minimise the free space around the axis of Column
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          Image.asset(
+            'assets/images/quiz-logo.png',
+            width: 200,
+          ),
+          // padding
+          const SizedBox(
+            height: 50,
+          ),
+          const Text(
+            'Hit button to start Quiz',
+            style: TextStyle(
+                fontSize: 20, color: Color.fromARGB(153, 253, 235, 162)),
+          ),
+          // padding
+          const SizedBox(
+            height: 50,
+          ),
+          FloatingActionButton.extended(
+            onPressed: () {},
+            label: const Text('Press to START'),
+            icon: const Icon(Icons.quiz),
+          ),
+          const SizedBox(
+            height: 20,
+          ),
+        ],
       ),
     );
   }
 }
+// return Container(
+//   child: const Center(
+//     // this is where we calling the statefulWidget.
+//     child: QuizInteraction(),
+//   ),
+// );

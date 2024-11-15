@@ -37,6 +37,7 @@ class StartScreen extends StatelessWidget {
           Image.asset(
             'assets/images/quiz-logo.png',
             width: 200,
+            color: const Color.fromARGB(150, 255, 255, 255),
           ),
           // padding
           const SizedBox(
@@ -52,9 +53,11 @@ class StartScreen extends StatelessWidget {
             height: 50,
           ),
           FloatingActionButton.extended(
+            // 8.) once pressed the quiz interaction custom statefulWidget is called
             onPressed: () {},
             label: const Text('Press to START'),
             icon: const Icon(Icons.quiz),
+            foregroundColor: const Color.fromARGB(194, 169, 60, 60),
           ),
           const SizedBox(
             height: 20,
@@ -64,9 +67,3 @@ class StartScreen extends StatelessWidget {
     );
   }
 }
-// return Container(
-//   child: const Center(
-//     // this is where we calling the statefulWidget.
-//     child: QuizInteraction(),
-//   ),
-// );

@@ -54,7 +54,7 @@ class _QuestionsScreenState extends State<QuestionsScreen> {
             // so we uses the inbuilt keyword '...' (spread) to display these answer buttons dynamically
             // map used to convert one value to another type of value
             // ...currentQuestion.answers.map((answer) {}
-            ...currentQuestion.getShuffledAnswer().map(
+            ...currentQuestion.getShuffledAnswers().map(
               (answer) {
                 // we need to do this in the page where the a state is in charge of displaying either home page, questions/answers page.
                 return AnswerButton(

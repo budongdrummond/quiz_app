@@ -1,8 +1,7 @@
-// import 'package:first_app/models/course_hole.dart';
-import 'package:quiz_app/models/quiz_questions.dart';
+import 'package:quiz_app/models/quiz_question.dart';
 
 const questions = [
-  QuizQuestions(
+  QuizQuestion(
     'Question 1 is bla bla bla ba',
     [
       'answer. 1', // place correct answer at number 1 in the list
@@ -11,7 +10,7 @@ const questions = [
       'answer. 4',
     ],
   ),
-  QuizQuestions(
+  QuizQuestion(
     'Question 2 is bla bla bla ba',
     [
       'answer. 1', // place correct answer at number 1 in the list
@@ -20,7 +19,7 @@ const questions = [
       'answer. 4 a very long sentence answer where break seen',
     ],
   ),
-  QuizQuestions(
+  QuizQuestion(
     'Question 3 is bla bla bla ba',
     [
       'answer. 1', // place correct answer at number 1 in the list
@@ -29,7 +28,7 @@ const questions = [
       'answer. 4 a very long sentence answer where break seen',
     ],
   ),
-  QuizQuestions(
+  QuizQuestion(
     'Question 4 is bla bla bla ba',
     [
       'answer. 1', // place correct answer at number 1 in the list
